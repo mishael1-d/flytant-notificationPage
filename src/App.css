@@ -1,38 +1,522 @@
-.App {
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+  background-color: #f2efee;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 15px;
+}
+
+.navbar {
+  background: #1b1b1b !important;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.mainLayout .ant-layout-header {
+  background: #1b1b1b;
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.navBar_btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar_btns img {
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.navBar_btns button {
+  margin-right: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 45px;
+  width: fit-content;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+}
+.navBar_btns button img {
+  width: 28px;
+  height: auto;
+  margin-right: 10px;
+}
+.notificationBell {
+  width: 48px;
+  margin-right: 1.5rem;
+}
+.campaignIcon {
+  margin-right: 4rem;
+}
+.profile .caret_down {
+  width: 20px;
+  margin-left: 0.8rem;
+}
+.heroSection {
+  background-color: #1b1b1b;
+  background-image: url(./assets/Hero-image.png);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: 95% 100px;
+  height: 80vh;
+  font-family: "Poppins";
+}
+.heroContainer,
+.notificationPage,
+.searchPage {
+  position: absolute;
+  top: 150px;
+  /* transform: translateY(-50%); */
+}
+.hero-title h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 50px;
+}
+.hero-title span {
+  font-weight: 800;
+}
+.hero-input {
+  border-radius: 10px;
+  background-image: url("./assets/search-btn.png");
+}
+.ant-btn-primary {
+  background-color: #a9a9a9 !important;
+  border-color: #a9a9a9 !important;
+}
+.ant-input-group-addon button {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+.ant-input-group {
+  border-radius: 10px !important;
+}
+.ant-input-group-wrapper
+  .ant-input-search
+  .ant-input-search-large
+  .ant-input-search-with-button
+  .ant-input-group-wrapper-lg {
+  border-radius: 10px !important;
+}
+.popular {
+  display: flex;
+  color: #fff;
+  margin-top: 2rem;
+  align-items: baseline;
+}
+.popular-title {
+  margin-right: 0.8rem;
+  font-weight: 600;
+  font-size: 20px;
+}
+.popular span {
+  margin: 2px 10px;
+  border: 1px solid #fff;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.notificationContainer {
+  background-color: #fff;
+  position: fixed;
+  top: 90px;
+  right: 8%;
+  width: 360px;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.notification-items .heading {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Poppins";
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 5px 0 15px 0;
+}
+.notification-title {
+  color: #1f2d3d;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+}
+.notification-date {
+  color: #1f2d3d80;
+  margin-top: -0.8rem;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.notification-menu a {
+  text-decoration: none;
+  color: #1b1b1b !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  display: block;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.influencerContainer {
+  position: relative;
+  top: 580px;
+}
+
+.influencerContainer h3 {
+  font-weight: 600;
+  font-size: 22px;
+  font-family: "Poppins";
+}
+
+.influencer-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.influencer-image img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.sm-icons img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin-right: 0.5rem;
+  margin-top: -1rem;
+}
+.categories {
+  display: flex;
+  justify-content: space-between;
+}
+.categories p {
+  padding: 5px 12px;
+  background: #dddddd;
+  font-size: 12px;
+  border-radius: 25px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+.influencer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.influencer-info,
+.categories,
+.sm-icons {
+  padding: 10px 0;
+  margin-top: -0.4rem;
+}
+
+.influencer-name {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Poppins";
+}
+.influencer-location {
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.back-btn {
+  width: 80px;
+  position: absolute;
+  top: 150px;
+  right: -10px;
+  cursor: pointer;
+}
+
+.advertSection {
+  position: relative;
+  top: 600px;
+  height: 280px;
+  background-image: url("./assets/banner-image.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advertSection h3 {
+  font-family: "Poppins";
+  font-size: 20px;
+  color: #fff;
+}
+
+.notificationPage,
+.searchPage {
+  padding: 0 150px;
+}
+.notificationPage .divider {
+  margin-bottom: 2rem;
+}
+.searchPage {
+  width: 100%;
+}
+.input-grp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-grp {
+  display: flex;
+  width: 60%;
+}
+.search-grp input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  background: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.search-grp button {
+  background-color: #000;
+  outline: none;
+  border: none;
+  border-top-right-radius: 10px;
+  color: #fff;
+  border-bottom-right-radius: 10px;
+  width: 150px;
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+.downloadBtn button {
+  height: 50px;
+  background: none;
+  outline: none;
+  padding: 10px 32px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 200px;
+  /* margin-left: 30px; */
+  font-family: "Poppins";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-links {
+  margin-top: 4rem;
+}
+.header-links span {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins";
+  margin-right: 5rem;
+  cursor: pointer;
+}
+.header-links .active {
+  font-weight: 600;
+}
+.header-links .disabled {
+  color: rgba(0, 0, 0, 0.6);
+}
+.search-result {
+  margin-top: 4rem;
+}
+.search-result-title {
+  font-weight: 600;
+  font-family: "Poppins";
+  font-size: 16px;
+}
+.search-result-subtitle {
+  font-weight: 500;
+  font-family: "Poppins";
+  font-size: 14px;
+}
+.result-cards {
+  margin-top: 4rem;
+}
+.cards {
+  background: #fff;
+  border: 1px solid #d0cece;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px #d0cece;
+  padding: 30px 40px;
+  margin-bottom: 2rem;
+}
+.cards .card-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+.card-info-name {
+  font-weight: 600;
+  font-family: "Poppins";
+  font-size: 24px;
+  color: #000;
+}
+.cards .categories {
+  display: flex;
+  justify-content: flex-start;
+}
+.cards .categories p {
+  margin-right: 1rem;
+}
+.paginate {
+  display: block;
+  margin: 4rem auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-pagination-item-active {
+  background: #000 !important;
+  border-color: #000 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-pagination-item-active a {
+  color: #fff !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.subfooter {
+  background: #1b1b1b;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  color: #fff;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 50px 0;
+}
+
+.subfooter h3 {
+  font-size: 20px;
+  font-family: 'Poppins';
+  color: #fff;
+  font-weight: 600;
+}
+
+.subfooter p {
+  font-weight: 500;
+  font-family: 'Poppins';
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.subfooter button {
+  background: #000;
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+  outline: none;
+  width: 120px;
+  padding: 5px 20px;
+  box-shadow:  0px 10px 30px 0px #FFFFFF40;
+  cursor: pointer;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  background: #000 !important;
+  margin-top: 18rem;
+  width: 100vw;
+  left: -150px;
+  color: #fff;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+.footer-items {
+display: flex;
+justify-content: space-between;
+/* align-items: center; */
+width: 100vw;
+}
+.footer .logo, .left p {
+  margin-bottom: 1rem;
+  font-family: 'Poppins';
+}
+.footer .logo img{
+  width: 50%;
+}
+.middle {
+  display: flex;
+
+}
+.middle .links {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  list-style: none;
+}
+.middle .links li {
+  text-align: center;
+  margin: .5rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.right {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-right: 8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right h3 {
+  color: #fff;
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.right img {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+.footer .divider {
+  height: 1px;
+  width: 100%;
+  background: #d0cece;
+  margin: 2rem 0;
+}
+.copyright {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #ababab;
 }
