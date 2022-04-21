@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Notifications from "./pages/Notifications";
 import Search from "./pages/Search";
+import NoResult from "./components/NoResult";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/notifications" exact element={<Notifications />} />
           <Route path="/search" exact element={<Search />} />
+          <Route path="/no-result" exact element={<NoResult/>}/>
         </Routes>
       </div>
     </BrowserRouter>
