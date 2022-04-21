@@ -1,8 +1,13 @@
 import React from "react";
 import { Input } from "antd";
+import {useNavigate} from 'react-router-dom'
 
 const { Search } = Input;
 function HeroSection() {
+  const navigate = useNavigate()
+  const onSearch =()=> {
+    navigate('/search')
+  }
   return (
     <div className="heroContainer">
       <div className="hero-title">
@@ -22,6 +27,7 @@ function HeroSection() {
           allowClear
           enterButton="Search"
           size="large"
+          onSearch={onSearch}
         />
       </div>
         <div className="popular">

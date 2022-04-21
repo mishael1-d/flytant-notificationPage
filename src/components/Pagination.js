@@ -1,10 +1,10 @@
 import React from "react";
 import { Pagination } from "antd";
 
-function Paginate() {
+function Paginate({postPerPage, totalPost, paginate, currentPage}) {
   return (
     <div className="paginate">
-      <Pagination defaultCurrent={1} total={6} />
+      <Pagination defaultCurrent={currentPage} total={totalPost} pageSize={postPerPage} onChange={paginate} />
     </div>
   );
 }
