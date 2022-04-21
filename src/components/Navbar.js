@@ -9,33 +9,35 @@ import notification from "../assets/notification.png";
 import NotificationBar from "./NotificationBar";
 function Navbar({ show, setShow }) {
   return (
-    <div className="container-fluid">
-      <div className="header">
-        <div className="logo">
-          <Link to="/">
-            <img src={logo} alt="Flytant" />
-          </Link>
-        </div>
-        <div className="navBar_btns">
-          <button type="default">
-            <img src={sponsorship} alt="" />
-            Create Campaign
-          </button>
-          <img
-            src={notification}
-            alt=""
-            className="notificationBell"
-            onClick={() => setShow(!show)}
-          />
-          {show && <NotificationBar setShow={setShow}/>}
-          <img src={campaignIcon} alt="" className="campaignIcon" />
-          <div className="profile">
+    <div className="navbar">
+      <div className="container-fluid">
+        <div className="header">
+          <div className="logo">
+            <Link to="/">
+              <img src={logo} alt="Flytant" />
+            </Link>
+          </div>
+          <div className="navBar_btns">
+            <button type="default">
+              <img src={sponsorship} alt="" />
+              Create Campaign
+            </button>
             <img
-              src={profileImage}
-              alt="Profile Pics"
-              className="profile_pic"
+              src={notification}
+              alt=""
+              className="notificationBell"
+              onClick={() => setShow(!show)}
             />
-            <img src={caretDown} alt="Profile Pics" className="caret_down" />
+            {show && <NotificationBar setShow={setShow} />}
+            <img src={campaignIcon} alt="" className="campaignIcon" />
+            <div className="profile">
+              <img
+                src={profileImage}
+                alt="Profile Pics"
+                className="profile_pic"
+              />
+              <img src={caretDown} alt="Profile Pics" className="caret_down" />
+            </div>
           </div>
         </div>
       </div>

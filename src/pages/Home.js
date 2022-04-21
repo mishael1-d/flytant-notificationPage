@@ -6,11 +6,9 @@ import Advertisement from "../components/HomePage/Advertisement";
 function Home() {
   return (
     <>
-      <div className="heroSection">
-        <div className="container-fluid">
+      <div>
           <HeroSection />
           <Influencers />
-        </div>
           <Advertisement />
       </div>
     </>

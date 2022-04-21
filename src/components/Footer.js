@@ -14,7 +14,6 @@ import ios from "../assets/ios.png";
 function Footer() {
   return (
     <div className="footer">
-      <div className="container-fluid">
         <div className="footer-items">
           <div className="left">
             <div className="logo">
@@ -55,7 +54,6 @@ function Footer() {
           <div className="divider"/>
           <p className="copyright">&copy;Copyright Flytant Pvt Ltd.</p>
       </div>
-    </div>
   );
 }
 

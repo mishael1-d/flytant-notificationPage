@@ -101,11 +101,11 @@ function SearchPage() {
             paginate={paginate}
             currentPage={currentPage}
           />
-          
+
         </div>
+      </div>
         <Subfooter />
         <Footer />
-      </div>
     </>
   );
 }
