@@ -206,7 +206,7 @@ p {
 }
 .notificationContainer {
   background-color: #fff;
-  position: fixed;
+  position: absolute;
   top: 90px;
   right: 8%;
   width: 360px;
