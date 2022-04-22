@@ -425,6 +425,9 @@ p {
 .header-links .ant-tabs-tab-btn .disabled {
   color: rgba(0, 0, 0, 0.6) !important;
 }
+.ant-tabs-ink-bar{
+  background: #000 !important;
+}
 .search-result {
   margin-top: 1rem;
 }
@@ -627,20 +630,101 @@ p {
   .input-grp {
     flex-direction: column;
   }
-  }
-
+}
 
 @media (max-width: 848px) {
   .container-fluid {
     padding: 0 1rem;
   }
   .header {
-    padding: .75rem 1.25rem;
+    padding: 0.75rem 1.25rem;
   }
   .navBar_btns button {
-    margin-right: 0.5rem;
+   display: none;
   }
   .campaignIcon {
-    margin-right: 1rem;
+   display: none;
   }
+  .subfooter {
+    padding: 2rem 1rem;
+  }
+  .subfooter p {
+    text-align: center;
+  }
+  .footer-items {
+    flex-direction: column;
+  }
+  .ant-tabs-tab+.ant-tabs-tab {
+    margin: 0 0 0 22px !important;
+}
+.ant-input-group {
+  display: block !important;
+}
+/* .ant-input-group-addon {
+  display: block !important;
+  border-radius: 0;
+} */
+.hero-input {
+  width: 100%;
+}
+.hero-input .ant-input-group-addon{
+ display: initial !important;
+}
+.cards {
+  flex-direction: column;
+  padding: 0;
+}
+.header .logo img{
+  width: 70%;
+}
+.suggestion {
+  flex-direction: column;
+}
+.cards .card-img {
+  margin: 0 auto;
+}
+.card-info {
+  text-align: center;
+}
+.card-info .sm-icons, .card-info .categories {
+  justify-content: center;
+}
+.ant-input-group-addon{
+  display: initial !important;
+}
+.ant-input-group-addon button {
+ border-radius: 0 !important;
+ width: 100% !important;
+ margin-top: .75rem;
+}
+.search-grp .ant-btn-primary {
+  width: 100%;
+  margin-top: .75rem;
+}
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.75rem;
+  }
+ .heroSection{
+   padding: 2rem 1.25rem;
+ }
+ .hero-title h1 {
+   font-size: 2.5rem;
+ }
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .notificationContainer {
+   right: 4%;
+ }
+ .notificationPage, .searchPage {
+   padding: 2rem 1rem;
+ }
+ 
 }
