@@ -28,7 +28,7 @@ function Navbar({ show, setShow }) {
               className="notificationBell"
               onClick={() => setShow(!show)}
             />
-            {show && <NotificationBar setShow={setShow} />}
+            {show && <NotificationBar setShow={setShow} show={show}/>}
             <img src={campaignIcon} alt="" className="campaignIcon" />
             <div className="profile">
               <img

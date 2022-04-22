@@ -84,5 +84,77 @@ export const person = [
         name: "Andrew Dale",
         details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
         image: person2
-    }
+    },
+    {
+        id: 14,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
+    {
+        id: 15,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
+    {
+        id: 16,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
+    {
+        id: 17,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
+    {
+        id: 18,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
+    {
+        id: 19,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
+    {
+        id: 20,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
+    {
+        id: 21,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
+    {
+        id: 22,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
+    {
+        id: 23,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
+    {
+        id: 24,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
+    {
+        id: 25,
+        name: "Andrew Dale",
+        details: "Take one of Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful. Python courses and learn how to code using this incredibly useful.",
+        image: person2
+    },
 ]

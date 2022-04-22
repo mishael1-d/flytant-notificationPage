@@ -12,12 +12,6 @@ function Notifications() {
             using this incredibly useful.
             Take one of Udemy’s range of Python courses and learn how to code
             using this incredibly useful.
-          </p>
-          <p className="notification-date">17 apr, 18:00</p>
-        </div>
-        <div className="divider" />
-        <div className="notification-items">
-          <p className="notification-title">
             Take one of Udemy’s range of Python courses and learn how to code
             using this incredibly useful.
             Take one of Udemy’s range of Python courses and learn how to code
@@ -28,6 +22,24 @@ function Notifications() {
         <div className="divider" />
         <div className="notification-items">
           <p className="notification-title">
+            Take one of Udemy’s range of Python courses and learn how to code
+            using this incredibly useful.
+            Take one of Udemy’s range of Python courses and learn how to code
+            using this incredibly useful.
+            Take one of Udemy’s range of Python courses and learn how to code
+            using this incredibly useful.
+            Take one of Udemy’s range of Python courses and learn how to code
+            using this incredibly useful.
+          </p>
+          <p className="notification-date">17 apr, 18:00</p>
+        </div>
+        <div className="divider" />
+        <div className="notification-items">
+          <p className="notification-title">
+            Take one of Udemy’s range of Python courses and learn how to code
+            using this incredibly useful.
+            Take one of Udemy’s range of Python courses and learn how to code
+            using this incredibly useful.
             Take one of Udemy’s range of Python courses and learn how to code
             using this incredibly useful.
             Take one of Udemy’s range of Python courses and learn how to code
