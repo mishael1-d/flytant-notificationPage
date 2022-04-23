@@ -723,9 +723,10 @@ p {
 }
 
  .notificationContainer {
-   right: 6%;
-   top: 5%;
-   width: 90vw;
+  right: 6%;
+  top: 7%;
+  width: 90vw;
+  height: fit-content;
  }
  .notificationPage, .searchPage {
    padding: 2rem 1rem;
